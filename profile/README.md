@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-<h3 align="center">Automated trading on Solana's pump.fun launchpads, built evidence first.</h3>
+<h3 align="center">Automated trading on Solana, built evidence first.</h3>
 
 <p align="center">
   Pulse records the launchpads, studies what it records, and trades only the strategies that passed their gates, inside hard limits.
