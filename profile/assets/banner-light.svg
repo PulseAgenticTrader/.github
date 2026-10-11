@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Pulse</title>
+  <desc id="desc">Pulse: automated trading on the pump.fun launchpads. Evidence first. Hard limits. Only code trades.</desc>
+  <style>
+    .c1,.c2,.c3 { animation: run 4.6s linear infinite; }
+    .c1 { animation-name: run1; } .c2 { animation-name: run2; } .c3 { animation-name: run3; }
+    @keyframes run1 { 0% { stroke-dashoffset: 16; } 62.0% { stroke-dashoffset: -96; } 100% { stroke-dashoffset: -96; } }
+    @keyframes run2 { 0% { stroke-dashoffset: 7; } 62.0% { stroke-dashoffset: -105; } 100% { stroke-dashoffset: -105; } }
+    @keyframes run3 { 0% { stroke-dashoffset: 1.6; } 62.0% { stroke-dashoffset: -110.4; } 100% { stroke-dashoffset: -110.4; } }
+    .ring { transform-box: fill-box; transform-origin: center; animation: ring 4.6s ease-out infinite; opacity: 0; }
+    @keyframes ring { 0%, 23.5% { transform: scale(1); opacity: 0; }
+      23.6% { transform: scale(1); opacity: 0.85; }
+      45.6% { transform: scale(3.4); opacity: 0; } 100% { opacity: 0; } }
+    .dot { transform-box: fill-box; transform-origin: center; animation: dot 4.6s ease-out infinite; }
+    @keyframes dot { 0%, 23.5% { transform: scale(1); } 25.1% { transform: scale(1.45); }
+      37.6% { transform: scale(1); } 100% { transform: scale(1); } }
+    .comet { animation: fadecomet 4.6s linear infinite; }
+    @keyframes fadecomet { 0% { opacity: 0; } 9.9% { opacity: 1; }
+      49.6% { opacity: 1; } 62.0% { opacity: 0; } 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .comet, .ring { display: none; }
+      .dot { animation: none; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFCFE"/>
+      <stop offset="1" stop-color="#EDF1F8"/>
+    </linearGradient>
+    <linearGradient id="beat" gradientUnits="userSpaceOnUse" x1="540" y1="0" x2="1280" y2="0"><stop offset="0" stop-color="#0EA5A4" stop-opacity="0"/><stop offset="0.22" stop-color="#0EA5A4"/><stop offset="0.62" stop-color="#6366F1"/><stop offset="1" stop-color="#6366F1" stop-opacity="0"/></linearGradient>
+    <radialGradient id="halo" cx="864" cy="66" r="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="1160" cy="400" r="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5A4" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#0EA5A4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fade" cx="900" cy="190" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.75" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.15"/>
+    </radialGradient>
+    <mask id="gridmask"><rect width="1280" height="360" fill="url(#fade)"/></mask>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#0B1222" fill-opacity="0.07"/>
+    </pattern>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1222" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#0B1222" stop-opacity="0.11"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-60%" width="120%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="soft" x="-10%" y="-60%" width="120%" height="220%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="card"><rect width="1280" height="360" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1280" height="360" fill="url(#bg)"/>
+    <rect width="1280" height="360" fill="url(#grid)" mask="url(#gridmask)"/>
+    <rect width="1280" height="360" fill="url(#aura)"/>
+    <circle cx="864" cy="66" r="190" fill="url(#halo)"/>
+    <path d="M540 198L722 198L750 180L776 198L810 198L832 238L864 66L898 280L926 198L968 198L1002 170L1042 198L1280 198" fill="none" stroke="url(#beat)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" filter="url(#glow)"/>
+    <path d="M540 198L722 198L750 180L776 198L810 198L832 238L864 66L898 280L926 198L968 198L1002 170L1042 198L1280 198" fill="none" stroke="url(#beat)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="comet">
+      <g filter="url(#soft)"><path class="c1" d="M540 198L722 198L750 180L776 198L810 198L832 238L864 66L898 280L926 198L968 198L1002 170L1042 198L1280 198" pathLength="100" fill="none" stroke="#312E81" stroke-opacity="6" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 300" stroke-dashoffset="16"/></g>
+      <path class="c2" d="M540 198L722 198L750 180L776 198L810 198L832 238L864 66L898 280L926 198L968 198L1002 170L1042 198L1280 198" pathLength="100" fill="none" stroke="#312E81" stroke-opacity="4" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 300" stroke-dashoffset="7"/>
+      <path class="c3" d="M540 198L722 198L750 180L776 198L810 198L832 238L864 66L898 280L926 198L968 198L1002 170L1042 198L1280 198" pathLength="100" fill="none" stroke="#312E81" stroke-opacity="5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.6 300" stroke-dashoffset="1.6"/>
+    </g>
+    <circle class="ring" cx="864" cy="66" r="12" fill="none" stroke="#6366F1" stroke-width="2"/>
+    <circle cx="864" cy="66" r="12" fill="none" stroke="#6366F1" stroke-opacity="0.35" stroke-width="2"/>
+    <circle class="dot" cx="864" cy="66" r="6" fill="#6366F1"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="359" rx="23.5" fill="none" stroke="url(#rim)"/>
+  <g font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif">
+    <text x="96" y="104" fill="#0F9488" font-size="15" font-weight="700" letter-spacing="3.5">SOLANA · PUMP.FUN FAMILY</text>
+    <text x="96" y="284" fill="#4A5568" font-size="23" font-weight="500">Evidence first. Hard limits. Only code trades.</text>
+  </g>
+  <g transform="translate(96 212) scale(0.66)" color="#0B1222"><path d="M11 -89V29M11 -50a39 39 0 1 0 78 0a39 39 0 1 0 -78 0M137 -89V-50A39 39 0 0 0 215 -50M215 -89V-11M263 -129V-11M366 -77C359 -86 349 -89 338 -89C322 -89 311 -81 311 -69C311 -56 324 -53 339 -50C354 -47 367 -43 367 -30C367 -18 356 -11 340 -11C328 -11 317 -14 310 -23M413 -50H491A39 39 0 1 0 481.88 -24.93" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

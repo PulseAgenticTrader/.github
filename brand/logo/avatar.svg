@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Pulse"><title>Pulse</title><defs>
+    <clipPath id="aclip"><rect width="1024" height="1024"/></clipPath>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2649"/>
+      <stop offset="0.55" stop-color="#0F1730"/>
+      <stop offset="1" stop-color="#090D1B"/>
+    </linearGradient>
+    <radialGradient id="aglow" cx="462" cy="420" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#818CF8" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#818CF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="asheen" cx="512" cy="-120" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="arim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.26"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.10"/>
+    </linearGradient>
+    <pattern id="adots" width="64" height="64" patternUnits="userSpaceOnUse">
+      <circle cx="32" cy="32" r="3.4" fill="#FFFFFF" fill-opacity="0.06"/>
+    </pattern>
+    <filter id="ablur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#aclip)">
+    <rect width="1024" height="1024" fill="url(#abg)"/>
+    <rect width="1024" height="1024" fill="url(#adots)"/>
+    <rect width="1024" height="1024" fill="url(#aglow)"/>
+    <rect width="1024" height="1024" fill="url(#asheen)"/>
+    <g filter="url(#ablur)" opacity="0.75"><defs><linearGradient id="abeat" gradientUnits="userSpaceOnUse" x1="176" y1="0" x2="848" y2="0"><stop offset="0" stop-color="#2DD4BF" stop-opacity="0.35"/><stop offset="0.22" stop-color="#2DD4BF"/><stop offset="0.78" stop-color="#818CF8"/><stop offset="1" stop-color="#818CF8" stop-opacity="0.35"/></linearGradient></defs><path d="M170 566L336 566L390 646L462 290L604 778L672 566L854 566" fill="none" stroke="url(#abeat)" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/><circle cx="462" cy="290" r="74" fill="none" stroke="#818CF8" stroke-opacity="0.45" stroke-width="12"/><circle cx="462" cy="290" r="40" fill="#E0E7FF"/></g>
+    <defs><linearGradient id="abeat" gradientUnits="userSpaceOnUse" x1="176" y1="0" x2="848" y2="0"><stop offset="0" stop-color="#2DD4BF" stop-opacity="0.35"/><stop offset="0.22" stop-color="#2DD4BF"/><stop offset="0.78" stop-color="#818CF8"/><stop offset="1" stop-color="#818CF8" stop-opacity="0.35"/></linearGradient></defs><path d="M170 566L336 566L390 646L462 290L604 778L672 566L854 566" fill="none" stroke="url(#abeat)" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/><circle cx="462" cy="290" r="74" fill="none" stroke="#818CF8" stroke-opacity="0.45" stroke-width="12"/><circle cx="462" cy="290" r="40" fill="#E0E7FF"/>
+  </g>
+  </svg>
