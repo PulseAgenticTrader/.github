@@ -8,7 +8,7 @@
 <h3 align="center">Automated trading on Solana, built evidence first.</h3>
 
 <p align="center">
-  Pulse records the launchpads, studies what it records, and trades only the strategies that passed their gates, inside hard limits.
+  Pulse records on-chain activity, studies what it records, and trades only the strategies that passed their gates, inside hard limits.
 </p>
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%"></p>
@@ -49,5 +49,5 @@ Pulse never crosses these, in code or in research.
 </p>
 
 <p align="center">
-  <sub>The code is private. Pulse has no token of its own, and never asks anyone for money, keys or seed phrases.</sub>
+  <sub>The code is private. Pulse has no token, never asks anyone for money, keys or seed phrases, and doesn't answer messages sent through this page.</sub>
 </p>

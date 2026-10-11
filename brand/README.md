@@ -1,5 +1,7 @@
 # Pulse brand
 
+All rights reserved. There is no licence, so nothing here may be reused without permission.
+
 ## The Pulse tab icon
 
 For the Pulse tab in each partner's app.
