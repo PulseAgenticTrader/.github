@@ -272,7 +272,7 @@ def banner(theme):
     lockup_x, base_y, scale = 96, 212, 0.66
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="title desc">
   <title id="title">Pulse</title>
-  <desc id="desc">Pulse: automated trading on the pump.fun launchpads. Evidence first. Hard limits. Only code trades.</desc>
+  <desc id="desc">Pulse: automated trading on Solana. Evidence first. Hard limits. Only code trades.</desc>
   <style>{style}
   </style>
   <defs>
@@ -328,7 +328,7 @@ def banner(theme):
   </g>
   <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="23.5" fill="none" stroke="url(#rim)"/>
   <g font-family="{FONT}">
-    <text x="{lockup_x}" y="104" fill="{t["eyebrow"]}" font-size="15" font-weight="700" letter-spacing="3.5">SOLANA · PUMP.FUN FAMILY</text>
+    <text x="{lockup_x}" y="104" fill="{t["eyebrow"]}" font-size="15" font-weight="700" letter-spacing="3.5">SOLANA</text>
     <text x="{lockup_x}" y="284" fill="{t["muted"]}" font-size="23" font-weight="500">Evidence first. Hard limits. Only code trades.</text>
   </g>
   <g transform="translate({lockup_x} {base_y}) scale({scale})" color="{t["ink"]}">{wordmark()}</g>
